@@ -1,0 +1,39 @@
+﻿body {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+/* HOME */
+#hc-home-header {
+    width: 100%;
+    height: 400px;
+    background-color: #0054A2;
+    color: #FFF;
+    padding: 1em;
+}
+
+    #hc-home-header > h1 {
+        text-align: center;
+    }
+
+    #hc-home-header > #hc-home-grid {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+/* END HOME */
+
+/* FOOTER */
+#hc-footer {
+    display: block;
+    width: 100%;
+    height: 200px;
+    background-color: #9E9E9E;
+    padding: 1em;
+    color: #FFF;
+}
+
+    #hc-footer > #hc-footer-masthead {
+        text-align: center;
+        font-size: 1.2em;
+    }
+/* END FOOTER */
