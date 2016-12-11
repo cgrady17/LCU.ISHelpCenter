@@ -15,7 +15,11 @@ class ClientNavigator {
         let hash = window.location.hash || "Home";
         if (hash.indexOf("#")) hash = hash.replace("#", "");
 
-        $.get(hash + ".html")
+        $.ajax({
+            url: hash + ".html",
+            method: "GET",
+            cache: false
+            })
             .done((html: string) => {
                 $("#hc-content").html(html);
                 this.initPartial();

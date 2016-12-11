@@ -12,7 +12,11 @@ var ClientNavigator = (function () {
         var hash = window.location.hash || "Home";
         if (hash.indexOf("#"))
             hash = hash.replace("#", "");
-        $.get(hash + ".html")
+        $.ajax({
+            url: hash + ".html",
+            method: "GET",
+            cache: false
+        })
             .done(function (html) {
             $("#hc-content").html(html);
             _this.initPartial();
