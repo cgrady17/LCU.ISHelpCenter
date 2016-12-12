@@ -9,13 +9,38 @@
     <link rel="stylesheet" href="Styles/HelpCenter.css" />
 </head>
 <body>
-    <div id="hc-header">
+<div id="hc-header">
+    <div id="hc-header-wrapper">
+        <div class="container">
+            <div id="hc-main-header">
+                <div id="hc-header-logo">
+                    <a href="#" hc-goto="home" title="I.S. Help Center">
+                        <img src="https://www.landmarkcu.com/App_Themes/Landmark_Standard/images/header/logo.png" alt="LCU I.S. Help Center" />
+                    </a>
+                </div>
+                <div id="hc-header-menu-wrapper">
+                    <div id="hc-header-menu-toggle">
+                        Menu
+                        <span id="hc-header-menu-toggle-icon"></span>
+                    </div>
+                    <nav id="hc-main-menu">
+                        <ul id="menu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Submit Issue</a></li>
+                            <li><a href="#">Status</a></li>
+                            <li><a href="#">Help Desk</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
     <div id="hc-content">
     </div>
     <div id="hc-footer">
         <div id="hc-footer-masthead">
-            Copyright &copy; <hc-year></hc-year> <a href="#">Landmark Credit Union</a>. All Rights Reserved.
+            Copyright &copy; <hc-year></hc-year> Landmark Credit Union. All Rights Reserved.
         </div>
     </div>
     <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>

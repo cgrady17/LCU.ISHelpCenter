@@ -1,14 +1,73 @@
 ﻿<div id="hc-home-header">
     <h1>The I.S. Team is here to <strong>Help</strong></h1>
     <div class="mdl-grid" id="hc-home-grid">
-        <div class="mdl-cell mdl-cell--8-col">
+        <div class="mdl-cell mdl-cell--7-col">
             <div id="hc-search-container">
-                <input type="text" id="hc-search-input" placeholder="What can we help you with?">
-                <button type="button"><i class="material-icons">search</i></button>
+                <form method="get" id="hc-search-form">
+                    <input type="text" id="hc-search-input" placeholder="What can we help you with?">
+                    <input type="submit" value="Submit" name="hc-search-submit" />
+                </form>
             </div>
         </div>
+        <div class="mdl-cell mdl-cell--5-col" id="hc-home-contact">
+            <h2>Contact the Help Desk</h2>
+            <div class="mdl-grid">
+                <div class="mdl-cell mdl-cell--6-col">
+                    <i class="material-icons">email</i> helpdesk@landmarkcu.com<br />
+                    <i class="material-icons">phone</i> Extension 6620 Option 2
+                </div>
+                <div class="mdl-cell mdl-cell--1-col">OR</div>
+                <div class="mdl-cell mdl-cell--5-col">
+                    <a href="#" hc-goto="submitissue" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent"><i class="material-icons">mouse</i> Submit Issue</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="hc-home-status">
+    <div id="hc-home-status-box" class="mdl-grid">
+        <div class="mdl-cell mdl-cell--8-col">
+            <h1>
+                <i class="material-icons">check</i>All Systems Operational
+            </h1>
+        </div>
         <div class="mdl-cell mdl-cell--4-col">
-            CONTENT
+            <p>Last updated a few seconds ago</p>
+        </div>
+    </div>
+    <div id="hc-status-grid">
+        <div class="mdl-grid hc-status-item hc-status-item-first">
+            <div class="mdl-cell mdl-cell--8-col">
+                <p class="hc-status-item-name">XP2</p>
+                <label>Waukesha</label>
+                <label>Westridge</label>
+            </div>
+            <div class="mdl-cell mdl-cell--4-col">
+                <br />
+                <p class="hc-status-item-status">Operational</p>
+            </div>
+        </div>
+        <div class="mdl-grid hc-status-item">
+            <div class="mdl-cell mdl-cell--8-col">
+                <p class="hc-status-item-name">Phones (IC)</p>
+                <label>Waukesha</label>
+                <label>Westridge</label>
+            </div>
+            <div class="mdl-cell mdl-cell--4-col">
+                <br />
+                <p class="hc-status-item-status">Operational</p>
+            </div>
+        </div>
+        <div class="mdl-grid hc-status-item hc-status-item-last">
+            <div class="mdl-cell mdl-cell--8-col">
+                <p class="hc-status-item-name">Spotlight</p>
+                <label>Waukesha</label>
+                <label>Westridge</label>
+            </div>
+            <div class="mdl-cell mdl-cell--4-col">
+                <br />
+                <p class="hc-status-item-status">Operational</p>
+            </div>
         </div>
     </div>
 </div>
